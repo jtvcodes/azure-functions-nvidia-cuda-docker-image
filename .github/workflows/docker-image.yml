@@ -1,11 +1,10 @@
 name: Docker Image CI
 
 on:
-  push:
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'nvidia-azfn-python.dockerfile'
+    - 'nvidia-azfn-python.dockerfile'
   
 jobs:
   push_to_registry:
