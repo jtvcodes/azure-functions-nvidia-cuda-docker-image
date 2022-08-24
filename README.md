@@ -4,5 +4,5 @@ The dockerfile provides the setup for a Ubuntu image based on NVIDIA CUDA image 
 
 Current image configuration:
 
-Python 3.9
-Azure Functions 4.9.1
+- Python 3.9
+- Azure Functions 4.9.1
