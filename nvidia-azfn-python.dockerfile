@@ -39,10 +39,12 @@ ENV ACCEPT_EULA=Y \
 	NUGET_XMLDOC_MODE=skip \
 	DOTNET_RUNNING_IN_CONTAINER=true \
 	DOTNET_USE_POLLING_FILE_WATCHER=true
+	
+RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
 # Python 3.9 Installation with dependencies
 RUN apt-get update \
-	&& DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata \
+	&& TZ=Etc/UTC apt-get -y install tzdata \
 	&& apt-get install -y --no-install-recommends software-properties-common \
 	&& add-apt-repository ppa:deadsnakes/ppa \
 	&& apt-get install -y python3.9 \
