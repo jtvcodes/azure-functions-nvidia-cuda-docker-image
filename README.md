@@ -2,6 +2,8 @@
 
 The dockerfile provides the setup for a Ubuntu image based on NVIDIA CUDA image and Azure Functions installed with Python support. 
 
+## File: nvidia-azfn-python.dockerfile
+
 Current image configuration:
 
 - Python 3.9
