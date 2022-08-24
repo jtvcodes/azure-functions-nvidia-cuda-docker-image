@@ -5,10 +5,6 @@ on:
     branches: [ "main" ]
     paths:
     - 'nvidia-azfn-python.dockerfile'
-  pull_request:
-    branches: [ "main" ]
-    paths:
-    - 'nvidia-azfn-python.dockerfile'
   
 jobs:
   push_to_registry:
