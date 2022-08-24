@@ -1,6 +1,10 @@
 name: Docker Image CI
 
 on:
+  push:
+    branches: [ "main" ]
+    paths:
+    - 'nvidia-azfn-python.dockerfile'
   pull_request:
     branches: [ "main" ]
     paths:
