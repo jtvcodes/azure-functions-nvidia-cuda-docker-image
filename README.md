@@ -1,2 +1,3 @@
-# azure-functions-nvidia-cuda-docker-image
-NVIDIA CUDA image with Azure functions installed
+# NVIDIA CUDA image with Azure functions installed
+
+The dockerfile provides the setup for a Ubuntu image based on NVIDIA CUDA image and Azure Functions installed with Python support. 
